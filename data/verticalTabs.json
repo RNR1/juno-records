@@ -1,0 +1,14 @@
+[
+	{
+		"label": "studio",
+		"color": "linear-gradient(to bottom,#e1c157 0,#c3a44a 100%)"
+	},
+	{
+		"label": "dj",
+		"color": "linear-gradient(to bottom,#e08f57 0,#be7548 100%)"
+	},
+	{
+		"label": "records",
+		"color": "linear-gradient(to bottom, #57a9e1 0, #4891be 100%)"
+	}
+]

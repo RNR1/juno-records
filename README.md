@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vinyl Shop (WIP)
 
-## Getting Started
+## Motivation
 
-First, run the development server:
+This is a tribute for one of my favorite online record stores, [Juno Records](http://www.juno.co.uk).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+I decided to challenge myself to reverse engineer their website with gatsby(react, graphql, nodejs) and without using 3rd party design libraries, only my CSS skills.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the project
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. clone the project
+2. run npm i
+3. run gatsby develop
+4. navigate to localhost:8000
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Screenshots
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Header
 
-## Learn More
+<img src="assets/screenshots/header.png" alt="Header">
 
-To learn more about Next.js, take a look at the following resources:
+#### Responsive View
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<img src="assets/screenshots/responsive-header.gif" alt="Responsive Header">
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Search + Dropdown
 
-## Deploy on Vercel
+<img src="assets/screenshots/dropdown.gif" alt="Dropdown menu">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Footer
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="assets/screenshots/footer.png" alt="Footer">
+
+#### Responsive View
+
+<img src="assets/screenshots/responsive-footer.gif" alt="Responsive Footer">

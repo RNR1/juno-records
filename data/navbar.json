@@ -1,0 +1,28 @@
+{
+	"categories": [
+		{ "label": "Music", "short": "Music", "to": "/" },
+		{ "label": "DJ equipment", "short": "DJ", "to": "/" },
+		{ "label": "Studio equipment", "short": "Studio", "to": "/" }
+	],
+	"misc": [
+		{ "icon": null, "iso": "gb", "label": "USD", "to": "/" },
+		{ "icon": "gift", "label": "Gift Vouchers", "to": "/" },
+		{ "icon": "question-circle", "label": "Help", "to": "/" }
+	],
+	"search": { "icon": ["fas", "search"], "label": "Search" },
+	"account": [
+		{
+			"icon": ["fas", "user-alt"],
+			"label": "My Juno",
+			"to": "/",
+			"status": "online"
+		},
+		{ "icon": ["fab", "weebly"], "label": "Wishlist", "to": "/" },
+		{
+			"icon": ["fas", "shopping-cart"],
+			"label": "Cart",
+			"to": "/",
+			"iconColor": "#E89108"
+		}
+	]
+}
