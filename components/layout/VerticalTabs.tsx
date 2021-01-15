@@ -1,17 +1,14 @@
 import styled from 'styled-components'
 import verticalTabs from 'data/verticalTabs.json'
 import VerticalTab from './VerticalTab'
+import { useRouter } from 'next/dist/client/router'
 
 const VerticalTabs = () => {
+	const { pathname } = useRouter()
 	return (
 		<Tabs>
 			{verticalTabs.map((tab) => (
-				<VerticalTab
-					key={tab.label}
-					label={tab.label}
-					color={tab.color}
-					caret={tab.label !== 'dj'}
-				/>
+				<VerticalTab key={tab.label} caret={pathname !== tab.to} {...tab} />
 			))}
 		</Tabs>
 	)
@@ -24,12 +21,11 @@ const Tabs = styled.div`
 
 	@media (min-width: 1024px) {
 		display: flex;
-		flex-direction: row-reverse;
-		transform: rotate(-90deg);
+		flex-direction: column;
 		position: fixed;
-		top: 450px;
+		gap: 10px;
+		top: 100px;
 		left: 0;
 		z-index: 10;
-		transform-origin: 0 0;
 	}
 `

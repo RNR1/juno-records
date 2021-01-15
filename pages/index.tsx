@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
 	return (
 		<>
 			<Head>
@@ -10,10 +10,12 @@ export default function Home() {
 				</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
+			{/* <div>Just a placeholder</div>
 			<div>Just a placeholder</div>
 			<div>Just a placeholder</div>
-			<div>Just a placeholder</div>
-			<div>Just a placeholder</div>
+			<div>Just a placeholder</div> */}
 		</>
 	)
 }
+
+export default Home

@@ -5,6 +5,7 @@ import useCurrentWidth from 'hooks/useCurrentWidth'
 import FlagIcon from './FlagIcon'
 import StatusIndicator from './StatusIndicator'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 export interface Item {
 	icon?: any
@@ -13,6 +14,7 @@ export interface Item {
 	label: string
 	status?: 'online' | 'n/a' | 'offline'
 	short?: string
+	to: string
 }
 
 export interface NavItemProps {
@@ -24,7 +26,7 @@ export interface NavItemProps {
 
 const NavItem: FC<NavItemProps> = ({
 	chevron,
-	item: { icon, iconColor, iso, label, status, short },
+	item: { icon, iconColor, iso, label, status, short, to },
 	responsive,
 	...linkProps
 }) => {
@@ -32,22 +34,24 @@ const NavItem: FC<NavItemProps> = ({
 	const largeScreen = width >= 1024 || !responsive
 
 	return (
-		<Container {...linkProps}>
-			{iso && <FlagIcon iso={iso} />}
-			{icon && (
-				<FontAwesomeIcon
-					icon={icon}
-					color={iconColor}
-					size={largeScreen ? 'sm' : 'lg'}
-					style={{ marginRight: 5 }}
-				/>
-			)}
-			<span>
-				{largeScreen ? label : short}
-				{chevron && <Chevron />}
-			</span>
-			{status && <StatusIndicator status={status} />}
-		</Container>
+		<Link href={to}>
+			<Container {...linkProps}>
+				{iso && <FlagIcon iso={iso} />}
+				{icon && (
+					<FontAwesomeIcon
+						icon={icon}
+						color={iconColor}
+						size={largeScreen ? 'sm' : 'lg'}
+						style={{ marginRight: 5 }}
+					/>
+				)}
+				<span>
+					{largeScreen ? label : short}
+					{chevron && <Chevron />}
+				</span>
+				{status && <StatusIndicator status={status} />}
+			</Container>
+		</Link>
 	)
 }
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const useClickOutside = () => {
+const useClickOutside = (event: keyof DocumentEventMap = 'mousedown') => {
 	const ref = useRef<HTMLDivElement | null>(null)
 	const [open, setOpen] = useState<boolean>(false)
 	const toggle = () => setOpen((prev) => !prev)
@@ -11,11 +11,11 @@ const useClickOutside = () => {
 	}
 
 	useEffect(() => {
-		if (open) document.addEventListener('mousedown', handleClickOutside)
-		else document.removeEventListener('mousedown', handleClickOutside)
+		if (open) document.addEventListener(event, handleClickOutside)
+		else document.removeEventListener(event, handleClickOutside)
 
 		return () => {
-			document.removeEventListener('mousedown', handleClickOutside)
+			document.removeEventListener(event, handleClickOutside)
 		}
 	}, [open])
 

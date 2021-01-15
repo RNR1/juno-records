@@ -1,15 +1,19 @@
 {
 	"categories": [
 		{ "label": "Music", "short": "Music", "to": "/" },
-		{ "label": "DJ equipment", "short": "DJ", "to": "/" },
-		{ "label": "Studio equipment", "short": "Studio", "to": "/" }
+		{ "label": "DJ equipment", "short": "DJ", "to": "/dj-equipment" },
+		{
+			"label": "Studio equipment",
+			"short": "Studio",
+			"to": "/studio-equipment"
+		}
 	],
 	"misc": [
 		{ "icon": null, "iso": "gb", "label": "USD", "to": "/" },
 		{ "icon": "gift", "label": "Gift Vouchers", "to": "/" },
 		{ "icon": "question-circle", "label": "Help", "to": "/" }
 	],
-	"search": { "icon": ["fas", "search"], "label": "Search" },
+	"search": { "icon": ["fas", "search"], "label": "Search", "to": "" },
 	"account": [
 		{
 			"icon": ["fas", "user-alt"],
