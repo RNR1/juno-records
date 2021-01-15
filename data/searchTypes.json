@@ -1,11 +1,12 @@
 [
-	{ "id": "all", "value": "all", "label": "All" },
-	{ "id": "artists", "value": "artists", "label": "Artists" },
-	{
-		"id": "releaseTitles",
-		"value": "releaseTitles",
-		"label": "Release Titles"
-	},
-	{ "id": "labels", "value": "labels", "label": "Labels" },
-	{ "id": "equipment", "value": "equipment", "label": "Equipment" }
+  { "id": "all", "value": "all", "label": "All", "to": "/" },
+  { "id": "artists", "value": "artists", "label": "Artists", "to": "/" },
+  {
+    "id": "releaseTitles",
+    "value": "releaseTitles",
+    "label": "Release Titles",
+    "to": "/"
+  },
+  { "id": "labels", "value": "labels", "label": "Labels", "to": "/" },
+  { "id": "equipment", "value": "equipment", "label": "Equipment", "to": "/" }
 ]

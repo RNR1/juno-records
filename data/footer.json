@@ -1,49 +1,49 @@
 {
-	"info": [
-		{ "label": "Ordering", "to": "/" },
-		{ "label": "Ordering Problems", "to": "/" },
-		{ "label": "FAQ", "to": "/" },
-		{ "label": "Contact Us (Customers)", "to": "/" },
-		{ "label": "Contact Us (Suppliers)", "to": "/" },
-		{ "label": "About Juno", "to": "/" },
-		{ "label": "Juno Reviews", "to": "/" },
-		{ "label": "New This Week", "to": "/" },
-		{ "label": "DJ & Studio Store", "to": "/" },
-		{ "label": "My Charts", "to": "/" },
-		{ "label": "Resubmit Card", "to": "/" },
-		{ "label": "Feedback", "to": "/" },
-		{ "label": "Privacy Policy", "to": "/" },
-		{ "label": "Terms and Conditions", "to": "/" },
-		{ "label": "Finance", "to": "/" },
-		{ "label": "Juno Vinyl Distribution", "to": "/" },
-		{ "label": "Juno Marketing and PR department", "to": "/" },
-		{ "label": "Promote your label / releases", "to": "/" }
-	],
-	"departments": [
-		{ "label": "Juno Reviews", "to": "/" },
-		{ "label": "Gift certificates", "to": "/" },
-		{ "label": "Create a chart", "to": "/" },
-		{ "label": "Represses", "to": "/" },
-		{ "label": "Juno images", "to": "/" },
-		{ "label": "Full label list", "to": "/" },
-		{ "label": "Top Labels", "to": "/" },
-		{ "label": "Portable Juno Player", "to": "/" }
-	],
-	"myJuno": [
-		{ "label": "My Artists", "to": "/" },
-		{ "label": "My Back-In-Stock Alerts", "to": "/" },
-		{ "label": "My Labels", "to": "/" },
-		{ "label": "My Account", "to": "/" },
-		{ "label": "My Wishlist", "to": "/" },
-		{ "label": "My Charts", "to": "/" },
-		{ "label": "My New Release E-mails", "to": "/" },
-		{ "label": "My Order History", "to": "/" },
-		{ "label": "My Coming Soon Alerts", "to": "/" }
-	],
-	"socialLinks": [
-		{ "icon": ["fab", "facebook-f"], "label": "Facebook", "to": "/" },
-		{ "icon": ["fab", "twitter"], "label": "Twitter", "to": "/" },
-		{ "icon": ["fab", "instagram"], "label": "Instagram", "to": "/" },
-		{ "icon": ["fab", "soundcloud"], "label": "Soundcloud", "to": "/" }
-	]
+  "info": [
+    { "label": "Ordering", "to": "/" },
+    { "label": "Ordering Problems", "to": "/" },
+    { "label": "FAQ", "to": "/" },
+    { "label": "Contact Us (Customers)", "to": "/" },
+    { "label": "Contact Us (Suppliers)", "to": "/" },
+    { "label": "About Juno", "to": "/" },
+    { "label": "Juno Reviews", "to": "/" },
+    { "label": "New This Week", "to": "/" },
+    { "label": "DJ & Studio Store", "to": "/" },
+    { "label": "My Charts", "to": "/" },
+    { "label": "Resubmit Card", "to": "/" },
+    { "label": "Feedback", "to": "/" },
+    { "label": "Privacy Policy", "to": "/" },
+    { "label": "Terms and Conditions", "to": "/" },
+    { "label": "Finance", "to": "/" },
+    { "label": "Juno Vinyl Distribution", "to": "/" },
+    { "label": "Juno Marketing and PR department", "to": "/" },
+    { "label": "Promote your label / releases", "to": "/" }
+  ],
+  "departments": [
+    { "label": "Juno Reviews", "to": "/" },
+    { "label": "Gift certificates", "to": "/" },
+    { "label": "Create a chart", "to": "/" },
+    { "label": "Represses", "to": "/" },
+    { "label": "Juno images", "to": "/" },
+    { "label": "Full label list", "to": "/" },
+    { "label": "Top Labels", "to": "/" },
+    { "label": "Portable Juno Player", "to": "/" }
+  ],
+  "myJuno": [
+    { "label": "My Artists", "to": "/" },
+    { "label": "My Back-In-Stock Alerts", "to": "/" },
+    { "label": "My Labels", "to": "/" },
+    { "label": "My Account", "to": "/" },
+    { "label": "My Wishlist", "to": "/" },
+    { "label": "My Charts", "to": "/" },
+    { "label": "My New Release E-mails", "to": "/" },
+    { "label": "My Order History", "to": "/" },
+    { "label": "My Coming Soon Alerts", "to": "/" }
+  ],
+  "socialLinks": [
+    { "icon": ["fab", "facebook-f"], "label": "Facebook", "to": "/" },
+    { "icon": ["fab", "twitter"], "label": "Twitter", "to": "/" },
+    { "icon": ["fab", "instagram"], "label": "Instagram", "to": "/" },
+    { "icon": ["fab", "soundcloud"], "label": "Soundcloud", "to": "/" }
+  ]
 }

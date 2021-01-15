@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 interface Props {
-	iso: string
+  iso: string
 }
 
 /** @flow */
@@ -14,12 +14,12 @@ interface Props {
  *  <FlagIcon iso="gb" />
  */
 const FlagIcon: FC<Props> = ({ iso }) => {
-	return (
-		<span
-			className={`flag-icon flag-icon-${iso}`}
-			style={{ marginRight: 5, zIndex: -1 }}
-		/>
-	)
+  return (
+    <span
+      className={`flag-icon flag-icon-${iso}`}
+      style={{ marginRight: 5, zIndex: -1 }}
+    />
+  )
 }
 
 export default FlagIcon

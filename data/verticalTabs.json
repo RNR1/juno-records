@@ -1,32 +1,32 @@
 [
-	{
-		"label": "studio",
-		"color": "linear-gradient(to bottom,#e1c157 0,#c3a44a 100%)",
-		"to": "/studio-equipment",
-		"content": {
-			"title": "Studio Equipment",
-			"description": "Our full range of studio equipment from all the leading equipment and software brands. Guaranteed fast delivery and low prices.",
-			"action": "Visit Juno Studio"
-		}
-	},
-	{
-		"label": "dj",
-		"color": "linear-gradient(to bottom,#e08f57 0,#be7548 100%)",
-		"to": "/dj-equipment",
-		"content": {
-			"title": "DJ Equipment",
-			"description": "Our full range of DJ equipment from all the leading equipment and software brands. Guaranteed fast delivery and low prices.",
-			"action": "Visit Juno DJ"
-		}
-	},
-	{
-		"label": "records",
-		"color": "linear-gradient(to bottom, #57a9e1 0, #4891be 100%)",
-		"to": "/",
-		"content": {
-			"title": "Vinyl & CDs",
-			"description": "The world's largest dance music store featuring the most comprehensive selection of new and back catalogue dance music Vinyl and CDs online.",
-			"action": "Visit Juno Records"
-		}
-	}
+  {
+    "label": "studio",
+    "color": "linear-gradient(to bottom,#e1c157 0,#c3a44a 100%)",
+    "to": "/studio-equipment",
+    "content": {
+      "title": "Studio Equipment",
+      "description": "Our full range of studio equipment from all the leading equipment and software brands. Guaranteed fast delivery and low prices.",
+      "action": "Visit Juno Studio"
+    }
+  },
+  {
+    "label": "dj",
+    "color": "linear-gradient(to bottom,#e08f57 0,#be7548 100%)",
+    "to": "/dj-equipment",
+    "content": {
+      "title": "DJ Equipment",
+      "description": "Our full range of DJ equipment from all the leading equipment and software brands. Guaranteed fast delivery and low prices.",
+      "action": "Visit Juno DJ"
+    }
+  },
+  {
+    "label": "records",
+    "color": "linear-gradient(to bottom, #57a9e1 0, #4891be 100%)",
+    "to": "/",
+    "content": {
+      "title": "Vinyl & CDs",
+      "description": "The world's largest dance music store featuring the most comprehensive selection of new and back catalogue dance music Vinyl and CDs online.",
+      "action": "Visit Juno Records"
+    }
+  }
 ]

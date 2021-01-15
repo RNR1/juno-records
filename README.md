@@ -9,15 +9,15 @@ I decided to challenge myself to reverse engineer their website with Next.js and
 ## Running the project
 
 1. Clone the project.
-2. Run ```yarn```.
-3. Run ```yarn dev```.
-4. Navigate to ```http://localhost:3000```.
+2. Run `yarn`.
+3. Run `yarn dev`.
+4. Navigate to `http://localhost:3000`.
 
 ## Building the project
 
-1. Run ```yarn build```.
-2. Run ```yarn start```.
-3. Navigate to ```http://localhost:3000```;
+1. Run `yarn build`.
+2. Run `yarn start`.
+3. Navigate to `http://localhost:3000`;
 
 ## Screenshots
 

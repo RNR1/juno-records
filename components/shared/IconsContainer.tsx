@@ -1,8 +1,8 @@
-import React, { FC } from 'react';
-import styled from 'styled-components';
+import React, { FC } from 'react'
+import styled from 'styled-components'
 
 interface Props {
-  icons: FC[];
+  icons: FC[]
 }
 
 const IconsContainer: FC<Props> = ({ icons = [] }) => {
@@ -12,10 +12,10 @@ const IconsContainer: FC<Props> = ({ icons = [] }) => {
         <Icon key={i.toString()} />
       ))}
     </Container>
-  );
-};
+  )
+}
 
-export default IconsContainer;
+export default IconsContainer
 
 const Container = styled.div`
   display: flex;
@@ -26,4 +26,4 @@ const Container = styled.div`
   background-color: #e5ecf1;
   border-radius: 2px;
   margin-bottom: 20px;
-`;
+`
