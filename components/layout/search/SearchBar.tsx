@@ -135,7 +135,6 @@ const OnMediumScreen = styled.section`
 
     &:hover {
       background-color: #16252e;
-      z-index: 0;
       transition: background-color 0.2s ease;
     }
   }

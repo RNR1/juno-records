@@ -68,10 +68,6 @@ const ItemGroup = styled(NavGroup)`
   &:hover {
     text-decoration: underline;
   }
-
-  &:last-child:hover {
-    text-decoration: none;
-  }
 `
 
 const Statement = styled.h5`

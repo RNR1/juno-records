@@ -8,6 +8,7 @@ import {
   faSearch,
   faCaretDown,
   faBars,
+  faAngleRight,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faWeebly,
@@ -19,6 +20,7 @@ import {
 
 config.autoAddCss = false
 library.add(
+  faAngleRight,
   faBars,
   faCaretDown,
   faGift,

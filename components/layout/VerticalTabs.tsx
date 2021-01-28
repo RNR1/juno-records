@@ -26,6 +26,5 @@ const Tabs = styled.div`
     gap: 10px;
     top: 100px;
     left: 0;
-    z-index: 10;
   }
 `

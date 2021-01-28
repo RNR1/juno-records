@@ -1,0 +1,57 @@
+[
+  { "label": "All Genres", "subGenres": [] },
+  { "label": "Ambient / Drone", "subGenres": [] },
+  { "label": "Balearic / Downtempo", "subGenres": [] },
+  { "label": "Bass", "subGenres": [] },
+  { "label": "Breakbeat", "subGenres": [] },
+  { "label": "Coldwave / Synth", "subGenres": [] },
+  { "label": "Deep House", "subGenres": [] },
+  { "label": "Disco / Nu-Disco", "subGenres": [] },
+  { "label": "DJ Equipment", "subGenres": [] },
+  { "label": "Drum And Base", "subGenres": [] },
+  {
+    "label": "Dubstep",
+    "subGenres": ["Deep Dubstep", "Dirty Dubstep / Trap / Grime"]
+  },
+  { "label": "Electro", "subGenres": [] },
+  { "label": "Experimental / Electronic", "subGenres": [] },
+  {
+    "label": "Funk Soul & Jazz",
+    "subGenres": [
+      "Broken Beat / Nu Jazz",
+      "Funk",
+      "International",
+      "Jazz",
+      "Soul"
+    ]
+  },
+  { "label": "Hip Hop / R&B", "subGenres": ["Hip Hop & R&B", "DJ Tools"] },
+  {
+    "label": "House",
+    "subGenres": [
+      "Deep House",
+      "Electro House",
+      "Funky / Club House",
+      "Minimal / Tech House",
+      "Progressive House"
+    ]
+  },
+  {
+    "label": "Leftfield",
+    "subGenres": [
+      "Ambient / Drone",
+      "Coldwave / Synth",
+      "Experimental / Electronic",
+      "Industrial / Noise",
+      "Library / Archive"
+    ]
+  },
+  { "label": "Minimal / Tech House", "subGenres": [] },
+  { "label": "Pop", "subGenres": [] },
+  {
+    "label": "Reggae",
+    "subGenres": ["Classics / Ska", "Dancehall / Reggae", "Dub"]
+  },
+  { "label": "Rock (All)", "subGenres": ["50s / 60s", "Folk / Americana"] },
+  { "label": "Soundtracks", "subGenres": [] }
+]

@@ -26,10 +26,7 @@ const Header = () => {
               />
             </Banner>
             <OnMediumScreen>
-              <Navbar
-
-              // removeWishlist={smallScreen}
-              />
+              <Navbar />
             </OnMediumScreen>
           </SearchStack>
         </HeaderRow>
@@ -50,7 +47,7 @@ const Container = styled.header`
   height: 50px;
   position: fixed;
   width: 100%;
-  z-index: 0;
+  z-index: 2;
 
   @media (min-width: 1024px) {
     height: 90px;

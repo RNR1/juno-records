@@ -34,7 +34,6 @@ const Container = styled.div`
 
   &:hover {
     color: #16252e;
-    z-index: 0;
     transition: color 0.3s ease-in-out;
   }
 `

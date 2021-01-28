@@ -1,5 +1,5 @@
+import List from 'components/shared/List'
 import { FC } from 'react'
-import styled from 'styled-components'
 import DropdownItem, { Item } from './DropdownItem'
 
 interface Props {
@@ -30,15 +30,3 @@ const DropdownList: FC<Props> = ({
 }
 
 export default DropdownList
-
-const List = styled.ul`
-  list-style: none;
-  list-style-position: inside;
-  background-color: white;
-  padding: 7px 0;
-  margin: 3px 0;
-  color: #000;
-  box-shadow: 0 0 1px black;
-  position: fixed;
-  z-index: 1;
-`

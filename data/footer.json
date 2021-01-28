@@ -1,49 +1,102 @@
 {
   "info": [
-    { "label": "Ordering", "to": "/" },
-    { "label": "Ordering Problems", "to": "/" },
-    { "label": "FAQ", "to": "/" },
-    { "label": "Contact Us (Customers)", "to": "/" },
-    { "label": "Contact Us (Suppliers)", "to": "/" },
-    { "label": "About Juno", "to": "/" },
-    { "label": "Juno Reviews", "to": "/" },
-    { "label": "New This Week", "to": "/" },
-    { "label": "DJ & Studio Store", "to": "/" },
-    { "label": "My Charts", "to": "/" },
-    { "label": "Resubmit Card", "to": "/" },
-    { "label": "Feedback", "to": "/" },
-    { "label": "Privacy Policy", "to": "/" },
-    { "label": "Terms and Conditions", "to": "/" },
-    { "label": "Finance", "to": "/" },
-    { "label": "Juno Vinyl Distribution", "to": "/" },
-    { "label": "Juno Marketing and PR department", "to": "/" },
-    { "label": "Promote your label / releases", "to": "/" }
+    { "label": "Ordering", "to": "/help/ordering" },
+    {
+      "label": "Ordering Problems",
+      "to": "/help/ordering-problems"
+    },
+    { "label": "FAQ", "to": "/faq" },
+    {
+      "label": "Contact Us (Customers)",
+      "to": "/contact-juno"
+    },
+    {
+      "label": "Contact Us (Suppliers)",
+      "to": "/supplier-contact-form"
+    },
+    { "label": "About Juno", "to": "/help/about" },
+    { "label": "Juno Daily", "to": "/juno-daily" },
+    { "label": "New This Week", "to": "/all/this-week" },
+    {
+      "label": "DJ & Studio Store",
+      "to": "/djandstudiostore"
+    },
+    { "label": "My Charts", "to": "/help/my-charts" },
+    { "label": "Feedback", "to": "/feedback" },
+    {
+      "label": "Privacy Policy",
+      "to": "/help/privacy-policy"
+    },
+    {
+      "label": "Terms and Conditions",
+      "to": "/help/terms-and-conditions"
+    },
+    { "label": "Finance", "to": "/info/finance" },
+    {
+      "label": "Juno Vinyl Distribution",
+      "to": "/distribution"
+    },
+    {
+      "label": "Juno Marketing and PR department",
+      "to": "/help/marketing"
+    },
+    {
+      "label": "Promote your label / releases",
+      "to": "/promote"
+    }
   ],
   "departments": [
-    { "label": "Juno Reviews", "to": "/" },
-    { "label": "Gift certificates", "to": "/" },
-    { "label": "Create a chart", "to": "/" },
-    { "label": "Represses", "to": "/" },
-    { "label": "Juno images", "to": "/" },
-    { "label": "Full label list", "to": "/" },
-    { "label": "Top Labels", "to": "/" },
-    { "label": "Portable Juno Player", "to": "/" }
+    { "label": "Juno Daily", "to": "/juno-daily" },
+    { "label": "Coming Soon", "to": "/coming_soon/all" },
+    { "label": "Gift certificates", "to": "/gift" },
+    { "label": "Classics", "to": "/classics" },
+    { "label": "Create a chart", "to": "/help/my-charts" },
+    { "label": "Represses", "to": "/all/back-in-stock/fourteen-days" },
+    { "label": "Juno images", "to": "/juno-images" },
+    { "label": "Full label list", "to": "/all/labels" },
+    { "label": "Top Labels", "to": "/all/top_labels" },
+    { "label": "Portable Juno Player", "to": "/design-your-juno-player" }
   ],
   "myJuno": [
-    { "label": "My Artists", "to": "/" },
-    { "label": "My Back-In-Stock Alerts", "to": "/" },
-    { "label": "My Labels", "to": "/" },
-    { "label": "My Account", "to": "/" },
-    { "label": "My Wishlist", "to": "/" },
-    { "label": "My Charts", "to": "/" },
-    { "label": "My New Release E-mails", "to": "/" },
-    { "label": "My Order History", "to": "/" },
-    { "label": "My Coming Soon Alerts", "to": "/" }
+    {
+      "label": "My Artists",
+      "to": "/account/subscriptions/#subs-artist-label"
+    },
+    {
+      "label": "My Back-In-Stock Alerts",
+      "to": "/account/subscriptions/#subs-bis"
+    },
+    { "label": "My Labels", "to": "/account/subscriptions/#subs-artist-label" },
+    { "label": "My Account", "to": "/account" },
+    { "label": "My Wishlist", "to": "/wishlist" },
+    { "label": "My Charts", "to": "/charts/charteditor" },
+    { "label": "My New Release E-mails", "to": "/account/subscriptions" },
+    { "label": "My Order History", "to": "/account/order-history" },
+    {
+      "label": "My Coming Soon Alerts",
+      "to": "/account/subscriptions/#subs-coming-soon"
+    }
   ],
   "socialLinks": [
-    { "icon": ["fab", "facebook-f"], "label": "Facebook", "to": "/" },
-    { "icon": ["fab", "twitter"], "label": "Twitter", "to": "/" },
-    { "icon": ["fab", "instagram"], "label": "Instagram", "to": "/" },
-    { "icon": ["fab", "soundcloud"], "label": "Soundcloud", "to": "/" }
+    {
+      "icon": ["fab", "facebook-f"],
+      "label": "Facebook",
+      "to": "https://www.facebook.com/junorecords/"
+    },
+    {
+      "icon": ["fab", "twitter"],
+      "label": "Twitter",
+      "to": "https://www.twitter.com/junorecords/"
+    },
+    {
+      "icon": ["fab", "instagram"],
+      "label": "Instagram",
+      "to": "https://www.instagram.com/junorecords/"
+    },
+    {
+      "icon": ["fab", "soundcloud"],
+      "label": "Soundcloud",
+      "to": "https://soundcloud.com/junorecords/"
+    }
   ]
 }

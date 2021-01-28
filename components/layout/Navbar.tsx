@@ -60,7 +60,6 @@ const Misc = styled(NavGroup)`
 
   &:hover {
     background-color: #16252e;
-    z-index: 0;
     transition: background-color 0.2s ease;
   }
 
@@ -83,7 +82,6 @@ const Account = styled(NavGroup)`
 
   &:hover {
     background-color: #16252e;
-    z-index: 0;
     transition: background-color 0.2s ease;
   }
 

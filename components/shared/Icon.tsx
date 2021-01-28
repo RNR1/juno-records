@@ -14,7 +14,7 @@ const Icon: FC<IconProps> = ({
   ...props
 }) => {
   return (
-    <a href={to} {...props}>
+    <a href={to} target='_blank' rel='noopener noreferrer' {...props}>
       <FontAwesomeIcon icon={icon as IconProp} color={iconColor || color} />
     </a>
   )

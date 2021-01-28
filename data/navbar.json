@@ -1,11 +1,33 @@
 {
   "categories": [
-    { "label": "Music", "short": "Music", "to": "/" },
-    { "label": "DJ equipment", "short": "DJ", "to": "/dj-equipment" },
+    {
+      "label": "Music",
+      "short": "Music",
+      "to": "/",
+      "hoverList": [
+        "New This Week",
+        "New Today",
+        "Last 8 Weeks",
+        "Bestsellers",
+        "Back Catalogue",
+        "Back In Stock",
+        "Coming Soon",
+        "DJ Charts",
+        "Juno Recommends",
+        "Today's Offers"
+      ]
+    },
+    {
+      "label": "DJ equipment",
+      "short": "DJ",
+      "to": "/dj-equipment",
+      "hoverList": ["DJ equipment"]
+    },
     {
       "label": "Studio equipment",
       "short": "Studio",
-      "to": "/studio-equipment"
+      "to": "/studio-equipment",
+      "hoverList": [""]
     }
   ],
   "misc": [
@@ -21,7 +43,11 @@
       "to": "/",
       "status": "online"
     },
-    { "icon": ["fab", "weebly"], "label": "Wishlist", "to": "/" },
+    {
+      "icon": ["fab", "weebly"],
+      "label": "Wishlist",
+      "to": "/"
+    },
     {
       "icon": ["fas", "shopping-cart"],
       "label": "Cart",
