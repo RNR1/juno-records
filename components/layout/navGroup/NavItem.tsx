@@ -19,7 +19,8 @@ export interface Item {
   status?: 'online' | 'n/a' | 'offline'
   short?: string
   to: string
-  hoverList?: string[]
+  hoverList?: { label: string }[]
+  gridList?: { label: string; position: string; width: number }[]
 }
 
 export interface NavItemProps {
@@ -32,7 +33,7 @@ export interface NavItemProps {
 const NavItem: FC<NavItemProps> = ({
   chevron,
   children,
-  item: { icon, iconColor, iso, label, status, short, to, hoverList },
+  item: { icon, iconColor, iso, label, status, short, to, hoverList, gridList },
   responsive,
   ...linkProps
 }) => {
@@ -43,7 +44,7 @@ const NavItem: FC<NavItemProps> = ({
 
   if (smallScreen && label === 'Wishlist') return null
   return (
-    <Wrapper ref={ref} hasHover={hoverList?.length! > 0}>
+    <Wrapper ref={ref} hasHover={hoverList?.length! > 0 && open}>
       <Link href={to}>
         <Container onClick={toggle} {...linkProps}>
           {iso && <FlagIcon iso={iso} />}
@@ -63,28 +64,45 @@ const NavItem: FC<NavItemProps> = ({
         </Container>
       </Link>
       {open && hoverList && (
-        <ListStack>
-          <CustomList>
-            {hoverList.map(item => (
-              <ItemStack key={item}>
-                <ListItem>{item}</ListItem>
-                <FontAwesomeIcon icon='angle-right' size='sm' />
-              </ItemStack>
-            ))}
-          </CustomList>
-          <CustomList>
-            {genres.map(genre => (
-              <div key={genre.label}>
-                <InnerItemStack>
-                  <ListItem>{genre.label}</ListItem>
-                  {genre.subGenres.length > 0 && (
-                    <FontAwesomeIcon icon='angle-right' size='sm' />
-                  )}
-                </InnerItemStack>
-              </div>
-            ))}
-          </CustomList>
-        </ListStack>
+        <HoverMenu>
+          {gridList && (
+            <GridList>
+              {gridList.map(item => (
+                <GridListItem key={item.label}>
+                  <GridImage $position={item.position} $width={item.width} />
+                  {item.label}
+                </GridListItem>
+              ))}
+            </GridList>
+          )}
+          <ListStack>
+            <CustomList>
+              {hoverList.map(item => (
+                <ItemStack key={item.label}>
+                  <ListItem>{item.label}</ListItem>
+                  <FontAwesomeIcon icon='angle-right' size='sm' />
+                </ItemStack>
+              ))}
+            </CustomList>
+            <CustomList>
+              {label === 'Music' &&
+                genres.map(genre => (
+                  <div key={genre.label}>
+                    <InnerItemStack>
+                      <ListItem>{genre.label}</ListItem>
+                      {genre.subGenres.length > 0 && (
+                        <FontAwesomeIcon
+                          color='#4a95c1'
+                          icon='angle-right'
+                          size='sm'
+                        />
+                      )}
+                    </InnerItemStack>
+                  </div>
+                ))}
+            </CustomList>
+          </ListStack>
+        </HoverMenu>
       )}
     </Wrapper>
   )
@@ -101,28 +119,30 @@ const Chevron = () => (
 )
 
 const Wrapper = styled.div<{ hasHover?: boolean }>`
+  height: 100%;
   display: ${({ hasHover }) => (hasHover ? 'block' : 'inherit')};
   z-index: ${({ hasHover }) => (hasHover ? '5' : '1')};
 `
 
 const Container = styled.a`
   cursor: pointer;
+  height: 100%;
 `
 
 const CustomList = styled(List)`
   position: relative;
+  margin: 0;
 `
 
 const ListStack = styled.div`
   display: flex;
-  position: absolute;
 `
 
 const ItemStack = styled.div`
   padding: 0 1rem;
   width: 100%;
   display: flex;
-  width: 209px;
+  min-width: 260px;
   justify-content: space-between;
   align-items: center;
   color: #4a95c1;
@@ -134,7 +154,8 @@ const ItemStack = styled.div`
 `
 
 const ListItem = styled.li`
-  font-size: 0.85rem;
+  height: 100%;
+  font-size: 0.8rem;
   padding: 0 0.2rem;
   cursor: pointer;
 `
@@ -143,7 +164,42 @@ const InnerItemStack = styled(ItemStack)`
   color: black;
 
   &:hover {
-    background-color: grey;
-    color: white;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: black;
   }
+`
+
+const GridList = styled(List)`
+  position: static;
+  display: flex;
+  flex-wrap: wrap;
+  width: 750px;
+  margin: 0;
+  padding: 0;
+`
+
+const GridListItem = styled.li`
+  display: block;
+  padding: 15px 0 5px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 150px;
+
+  &:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+  }
+`
+
+const GridImage = styled.div<{ $position: string; $width: number }>`
+  background-image: url('https://wwwcdn.juno.co.uk/12090200/images/jr-sprite-nav.png');
+  display: block;
+  height: 60px;
+  margin: 0 auto 7px auto;
+  background-position: ${({ $position }) => $position};
+  width: ${({ $width }) => $width}px;
+`
+
+const HoverMenu = styled.div`
+  position: absolute;
 `

@@ -8,7 +8,7 @@ const List = styled.ul`
   margin: 3px 0;
   color: #000;
   box-shadow: 0 0 1px black;
-  position: fixed;
+  position: absolute;
   z-index: 2;
 `
 

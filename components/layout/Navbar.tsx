@@ -1,10 +1,9 @@
-import { FC } from 'react'
 import styled from 'styled-components'
 import { categories, misc, account } from 'data/navbar.json'
 import NavGroup from 'components/layout/navGroup/NavGroup'
 import { Item } from './navGroup/NavItem'
 
-const Navbar: FC = () => {
+const Navbar = () => {
   return (
     <Container>
       <Categories items={categories as Item[]} chevron />

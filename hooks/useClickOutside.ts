@@ -11,8 +11,7 @@ const useClickOutside = (event: keyof DocumentEventMap = 'mousedown') => {
   }
 
   useEffect(() => {
-    if (open) document.addEventListener(event, handleClickOutside)
-    else document.removeEventListener(event, handleClickOutside)
+    document.addEventListener(event, handleClickOutside)
 
     return () => {
       document.removeEventListener(event, handleClickOutside)
