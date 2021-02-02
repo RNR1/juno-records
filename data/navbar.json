@@ -84,19 +84,181 @@
         }
       ],
       "hoverList": [
-        { "label": "DJ equipment" },
-        { "label": "Styluses, cartridges & headshells" },
-        { "label": "Vinyl DJ accessories" },
-        { "label": "Digital DJ accessories" },
-        { "label": "Record bags, boxes & trolleys" },
-        { "label": "Vinyl DJ equipment bags & cases" },
-        { "label": "Vinyl sleeves, cleaning & storage" },
-        { "label": "Slipmats" },
-        { "label": "Decksavers & DJ equipment covers" },
-        { "label": "PA & live sound" },
-        { "label": "DJ lighting" },
-        { "label": "DJ spare parts" },
-        { "label": "Hi-Fi" }
+        {
+          "label": "DJ equipment",
+          "selection": [
+            {
+              "label": "DJ effects & samplers",
+              "position": "-275px -173px",
+              "width": 69,
+              "href": "/dj-effects-samplers"
+            },
+            {
+              "label": "DJ interfaces",
+              "position": "-638px -173px",
+              "width": 70,
+              "href": "/dj-interfaces"
+            },
+            {
+              "label": "DJ speakers",
+              "position": "-759px -173px",
+              "width": 32,
+              "href": "/dj-speakers"
+            },
+            {
+              "label": "Earphones",
+              "position": "-927px -173px",
+              "width": 46,
+              "href": "/earphones"
+            },
+            {
+              "label": "Handheld recorders",
+              "position": "0 -224px",
+              "width": 23,
+              "href": "/handheld-recorders"
+            },
+            {
+              "label": "Portable & USB turntables",
+              "position": "-394px -275px",
+              "width": 49,
+              "href": "/portable-usb-turntables"
+            },
+            {
+              "label": "Rackmount CD & media players",
+              "position": "-554px -275px",
+              "width": 70,
+              "href": "/rackmount-cd-media-players"
+            },
+            {
+              "label": "Subwoofers",
+              "position": "-225px -326px",
+              "width": 46,
+              "href": "/rackmount-cd-media-players"
+            }
+          ]
+        },
+        {
+          "label": "Styluses, cartridges & headshells",
+          "selection": [
+            {
+              "label": "DJ styluses",
+              "position": "-792px -173px",
+              "width": 53,
+              "href": "/styluses"
+            },
+            {
+              "label": "DJ cartridges",
+              "position": "-105px -173px",
+              "width": 44,
+              "href": "/dj-cartridges"
+            },
+            {
+              "label": "Headshells",
+              "position": "-131px -224px",
+              "width": 68,
+              "href": "/headshells"
+            },
+            {
+              "label": "Hi-Fi styluses",
+              "position": "-459px -224px",
+              "width": 53,
+              "href": "/hi-fi-styluses"
+            },
+            {
+              "label": "Hi-Fi cartridges",
+              "position": "-333px -224px",
+              "width": 53,
+              "href": "/hi-fi-cartridges"
+            }
+          ]
+        },
+        {
+          "label": "Vinyl DJ accessories",
+          "selection": [
+            {
+              "label": "45 adapters",
+              "position": "0 -122px",
+              "width": 46,
+              "href": "/45-adapters"
+            },
+            {
+              "label": "DJ accessories",
+              "position": "0 -173px",
+              "width": 63,
+              "href": "/dj-accessories"
+            },
+            {
+              "label": "Hearing protection",
+              "position": "-200px -224px",
+              "width": 63,
+              "href": "/hearing-protection"
+            },
+            {
+              "label": "Phono preamps",
+              "position": "-279px -275px",
+              "width": 63,
+              "href": "/phono-preamps"
+            },
+            {
+              "label": "Record sleeves",
+              "position": "-711px -275px",
+              "width": 44,
+              "href": "/record-sleeves"
+            },
+            {
+              "label": "Record stabilizers",
+              "position": "-756px -275px",
+              "width": 45,
+              "href": "/record-stabilizers"
+            },
+            {
+              "label": "Shoulder bags",
+              "position": "-756px -275px",
+              "width": 45,
+              "href": "/shoulder-bags"
+            },
+            {
+              "label": "Slipmats",
+              "position": "-880px -275px",
+              "width": 47,
+              "href": "/slipmats"
+            },
+            {
+              "label": "T-shirts & sweatshirts",
+              "position": "-333px -326px",
+              "width": 55,
+              "href": "/tshirts-sweatshirts"
+            },
+            {
+              "label": "Torches batteries & lamps",
+              "position": "-272px -326px",
+              "width": 60,
+              "href": "/torches-batteries-lamps"
+            },
+            {
+              "label": "Turntable accessories",
+              "position": "-389px -326px",
+              "width": 70,
+              "href": "/turntable-accessories"
+            },
+            {
+              "label": "Vinyl cleaning",
+              "position": "-531px -326px",
+              "width": 50,
+              "href": "/cleaning-maintenance"
+            }
+          ]
+        },
+        { "label": "Digital DJ accessories", "selection": [] },
+        { "label": "Record bags, boxes & trolleys", "selection": [] },
+        { "label": "Vinyl DJ equipment bags & cases", "selection": [] },
+        { "label": "Vinyl sleeves, cleaning & storage", "selection": [] },
+        { "label": "Slipmats", "selection": [] },
+        { "label": "Decksavers & DJ equipment covers", "selection": [] },
+        { "label": "PA & live sound", "selection": [] },
+        { "label": "DJ lighting", "selection": [] },
+        { "label": "DJ spare parts", "selection": [] },
+        { "label": "Hi-Fi", "selection": [] }
       ]
     },
     {
@@ -178,20 +340,20 @@
         }
       ],
       "hoverList": [
-        { "label": "Synthesizers & synth modules" },
-        { "label": "Drum machines" },
-        { "label": "MIDI controllers & keyboards" },
-        { "label": "Samplers & sequencers" },
-        { "label": "Audio & MIDI interfaces" },
-        { "label": "Studio monitors & mixers" },
-        { "label": "Studio headphones" },
-        { "label": "Effects units & pedals" },
-        { "label": "Compressors limiters & gates" },
-        { "label": "Music software & VST instruments" },
-        { "label": "Microphones" },
-        { "label": "Studio amplifiers & preamps" },
-        { "label": "Digital recorders" },
-        { "label": "Guitar accessories" }
+        { "label": "Synthesizers & synth modules", "selection": [] },
+        { "label": "Drum machines", "selection": [] },
+        { "label": "MIDI controllers & keyboards", "selection": [] },
+        { "label": "Samplers & sequencers", "selection": [] },
+        { "label": "Audio & MIDI interfaces", "selection": [] },
+        { "label": "Studio monitors & mixers", "selection": [] },
+        { "label": "Studio headphones", "selection": [] },
+        { "label": "Effects units & pedals", "selection": [] },
+        { "label": "Compressors limiters & gates", "selection": [] },
+        { "label": "Music software & VST instruments", "selection": [] },
+        { "label": "Microphones", "selection": [] },
+        { "label": "Studio amplifiers & preamps", "selection": [] },
+        { "label": "Digital recorders", "selection": [] },
+        { "label": "Guitar accessories", "selection": [] }
       ]
     }
   ],
