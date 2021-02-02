@@ -105,13 +105,7 @@ const NavItem: FC<NavItemProps> = ({
             </CustomList>
             <CustomList>
               {selection && (
-                <GridList
-                  className='fade'
-                  $noShadow
-                  $columns={3}
-                  $item={156.8}
-                  $width={470}
-                >
+                <GridList $noShadow $columns={3} $item={156.8} $width={470}>
                   {selection?.map(item => (
                     <GridListItem key={item.label}>
                       <GridImage
@@ -248,6 +242,10 @@ const GridListItem = styled.li`
   text-align: center;
   font-size: 0.8rem;
   width: 150px;
+  animation-duration: 0.4s;
+  animation-name: ${fade};
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 
   &:hover {
     background-color: rgba(128, 128, 128, 0.2);
