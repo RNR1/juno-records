@@ -66,7 +66,7 @@ const NavItem: FC<NavItemProps> = ({
       {open && hoverList && (
         <HoverMenu>
           {gridList && (
-            <GridList>
+            <GridList $width={150 * (gridList.length / 2)}>
               {gridList.map(item => (
                 <GridListItem key={item.label}>
                   <GridImage $position={item.position} $width={item.width} />
@@ -119,14 +119,12 @@ const Chevron = () => (
 )
 
 const Wrapper = styled.div<{ hasHover?: boolean }>`
-  height: 100%;
   display: ${({ hasHover }) => (hasHover ? 'block' : 'inherit')};
   z-index: ${({ hasHover }) => (hasHover ? '5' : '1')};
 `
 
 const Container = styled.a`
   cursor: pointer;
-  height: 100%;
 `
 
 const CustomList = styled(List)`
@@ -154,7 +152,6 @@ const ItemStack = styled.div`
 `
 
 const ListItem = styled.li`
-  height: 100%;
   font-size: 0.8rem;
   padding: 0 0.2rem;
   cursor: pointer;
@@ -169,11 +166,11 @@ const InnerItemStack = styled(ItemStack)`
   }
 `
 
-const GridList = styled(List)`
+const GridList = styled(List)<{ $width: number }>`
   position: static;
   display: flex;
   flex-wrap: wrap;
-  width: 750px;
+  width: ${({ $width }) => $width}px;
   margin: 0;
   padding: 0;
 `

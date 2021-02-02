@@ -103,13 +103,102 @@
       "label": "Studio equipment",
       "short": "Studio",
       "to": "/studio-equipment",
-      "hoverList": [""]
+      "gridList": [
+        {
+          "label": "Synthesizers",
+          "position": "0 -61px",
+          "width": 85,
+          "href": "/synthesizers"
+        },
+        {
+          "label": "Synth modules",
+          "position": "-86px -61px",
+          "width": 33,
+          "href": "/synth-modules"
+        },
+        {
+          "label": "Drum machines",
+          "position": "-120px -61px",
+          "width": 78,
+          "href": "/drum-machines"
+        },
+        {
+          "label": "MIDI controllers",
+          "position": "-199px -61px",
+          "width": 69,
+          "href": "/midi-controllers"
+        },
+        {
+          "label": "MIDI keyboards",
+          "position": "-269px -61px",
+          "width": 83,
+          "href": "/midi-keyboards"
+        },
+        {
+          "label": "Audio interfaces",
+          "position": "-353px -61px",
+          "width": 79,
+          "href": "/audio-interfaces"
+        },
+        {
+          "label": "Studio monitors",
+          "position": "-433px -61px",
+          "width": 38,
+          "href": "/studio-monitors"
+        },
+        {
+          "label": "Studio headphones",
+          "position": "-472px -61px",
+          "width": 79,
+          "href": "/studio-headphones"
+        },
+        {
+          "label": "Samplers",
+          "position": "-552px -61px",
+          "width": 81,
+          "href": "/samplers"
+        },
+        {
+          "label": "Sequencers",
+          "position": "-634px -61px",
+          "width": 85,
+          "href": "/sequencers"
+        },
+        {
+          "label": "Effects units",
+          "position": "-720px -61px",
+          "width": 68,
+          "href": "/effects-units"
+        },
+        {
+          "label": "Effects pedals",
+          "position": "-789px -61px",
+          "width": 60,
+          "href": "/effects-pedals"
+        }
+      ],
+      "hoverList": [
+        { "label": "Synthesizers & synth modules" },
+        { "label": "Drum machines" },
+        { "label": "MIDI controllers & keyboards" },
+        { "label": "Samplers & sequencers" },
+        { "label": "Audio & MIDI interfaces" },
+        { "label": "Studio monitors & mixers" },
+        { "label": "Studio headphones" },
+        { "label": "Effects units & pedals" },
+        { "label": "Compressors limiters & gates" },
+        { "label": "Music software & VST instruments" },
+        { "label": "Microphones" },
+        { "label": "Studio amplifiers & preamps" },
+        { "label": "Digital recorders" },
+        { "label": "Guitar accessories" }
+      ]
     }
   ],
   "misc": [
     { "icon": null, "iso": "gb", "label": "USD", "to": "/" },
-    { "icon": "gift", "label": "Gift Vouchers", "to": "/" },
-    { "icon": "question-circle", "label": "Help", "to": "/" }
+    { "icon": "gift", "label": "Gift Vouchers", "to": "/gift" },
+    { "icon": "question-circle", "label": "Help", "to": "/help" }
   ],
   "search": { "icon": ["fas", "search"], "label": "Search", "to": "" },
   "account": [
