@@ -1,4 +1,4 @@
-import { FC, useRef, useState } from 'react'
+import { FC, useRef, useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -53,6 +53,18 @@ const NavItem: FC<NavItemProps> = ({
     hoverList?.[0].selection || []
   )
 
+  const clickOutside = useCallback((e: MouseEvent) => {
+    if (e.target === wrapperRef.current) return
+    setIsOpen(false)
+  }, [])
+
+  useEffect(() => {
+    document.addEventListener('click', clickOutside)
+    return () => {
+      document.removeEventListener('click', clickOutside)
+    }
+  }, [])
+
   if (smallScreen && label === 'Wishlist') return null
   return (
     <Wrapper
@@ -72,7 +84,7 @@ const NavItem: FC<NavItemProps> = ({
               style={{ marginRight: 5 }}
             />
           )}
-          <span>
+          <span className='label'>
             {largeScreen ? label : short}
             {chevron && <Chevron />}
           </span>
@@ -152,15 +164,19 @@ const Chevron = () => (
 )
 
 const Wrapper = styled.div<{ hasHover?: boolean }>`
-  display: ${({ hasHover }) => (hasHover ? 'block' : 'inherit')};
+  position: relative;
+  height: inherit;
+  display: ${({ hasHover }) => (hasHover ? 'flex' : 'inherit')};
   z-index: ${({ hasHover }) => (hasHover ? '5' : '1')};
+  background: ${({ hasHover }) => (hasHover ? 'white' : 'transparent')};
+
+  & .label {
+    color: ${({ hasHover }) => (hasHover ? 'black' : 'white')};
+  }
 `
 
 const Container = styled.a`
   cursor: pointer;
-
-  &:hover {
-  }
 `
 
 const CustomList = styled(List)`
@@ -268,4 +284,5 @@ const GridImage = styled.div<{
 
 const HoverMenu = styled.div`
   position: absolute;
+  top: 40px;
 `

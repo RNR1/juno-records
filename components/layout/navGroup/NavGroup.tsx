@@ -1,6 +1,6 @@
-import { IconProps } from 'components/shared/Icon'
 import { FC } from 'react'
 import styled from 'styled-components'
+import { IconProps } from 'components/shared/Icon'
 import NavItem, { Item as IItem, NavItemProps } from './NavItem'
 
 /** @flow */

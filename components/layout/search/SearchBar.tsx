@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import styled from 'styled-components'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { search } from 'data/navbar.json'
+import data from 'data/navbar.json'
 import Dropdown, { SearchProps } from 'components/layout/search/Dropdown'
 import NavItem from 'components/layout/navGroup/NavItem'
 
@@ -25,6 +25,7 @@ const SearchBar: FC<SearchProps> = ({
   filtersLabel = 'Filters',
 }) => {
   const [searchValue, setSearchValue] = useState<string>('')
+  const { search } = data
   return (
     <>
       <OnMediumScreen>

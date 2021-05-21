@@ -1,9 +1,12 @@
+import { useState } from 'react'
 import styled from 'styled-components'
-import { categories, misc, account } from 'data/navbar.json'
+import data from 'data/navbar.json'
 import NavGroup from 'components/layout/navGroup/NavGroup'
 import { Item } from './navGroup/NavItem'
 
 const Navbar = () => {
+  const { categories, misc, account } = data
+
   return (
     <Container>
       <Categories items={categories as Item[]} chevron />
@@ -35,12 +38,6 @@ const Categories = styled(NavGroup)`
   font-weight: 600;
   padding: 6px 10px;
   user-select: 'none';
-
-  &:hover {
-    background-color: #fff;
-    color: #000;
-    transition: all 0.2s ease;
-  }
 
   @media (max-width: 1023px) {
     display: none;

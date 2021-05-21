@@ -249,7 +249,23 @@
             }
           ]
         },
-        { "label": "Digital DJ accessories", "selection": [] },
+        {
+          "label": "Digital DJ accessories",
+          "selection": [
+            {
+              "label": "Blank CDs",
+              "position": "-159px -122px",
+              "width": 55,
+              "href": "/blank-media-memory"
+            },
+            {
+              "label": "CD cleaning & CD labels",
+              "position": "-355px -122px",
+              "width": 35,
+              "href": "/cd-cleaning"
+            }
+          ]
+        },
         { "label": "Record bags, boxes & trolleys", "selection": [] },
         { "label": "Vinyl DJ equipment bags & cases", "selection": [] },
         { "label": "Vinyl sleeves, cleaning & storage", "selection": [] },

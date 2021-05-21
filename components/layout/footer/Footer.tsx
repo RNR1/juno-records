@@ -6,9 +6,10 @@ import paymentIcons from 'components/layout/footer/paymentIcons'
 import NavGroup from 'components/layout/navGroup/NavGroup'
 import SecureStatement from 'components/layout/secureStatement/SecureStatement'
 import config from 'config'
-import { info, departments, myJuno, socialLinks } from 'data/footer.json'
+import data from 'data/footer.json'
 
 const Footer = () => {
+  const { info, departments, myJuno, socialLinks } = data
   return (
     <Container>
       <Items>
